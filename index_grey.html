@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------OWL-CAROUSEL------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- -----------BOOTSTRAP------------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+
+    <!-- ----------LINKS FONTAWESOME -------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Broker Chooser</title>
+    <link rel="stylesheet" href="css/style_grey.css?v=1.2">
+    <link rel="stylesheet" href="css/responsive.css?v=1.2">
+</head>
+<body>
+
+    <!-- -----------------CANVAS_MENU------------------------ -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="logo_mobile"><img src="img/logo_grey.png" alt=""></a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <nav class="navigator_mob">
+                <ul>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Inicio</a></li>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Tienda</a></li>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Nosotros</a></li>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Servicios</a></li>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Blog</a></li>
+                    <li><a href="#" class="item_menu_mob"><i class="fa-solid fa-circle-notch"></i>Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="bot_mob">
+                <div class="item_mob">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#" class="item_left">+91-234-567-8900</a>
+                </div>
+                <div class="item_mob">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="item_left_time">Mon-Sat 8am to 6pm</p>
+                </div>
+            </div>
+            <div class="social_mob">
+                <a href="#" class="red_mob"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="red_mob"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#" class="red_mob"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="red_mob"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="bot_canva">
+                <a href="#" class="btn_canva btn_global">REQUEST A CUOTE</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------------------------HEADER----------------------- -->
+    <header class="header">
+        <div class="header_top">
+            <div class="content_top">
+                <div class="left_top">
+                    <div class="box_left">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#" class="item_left">themeht23@gmail.com</a>
+                    </div>
+                    <div class="box_left box_left_desktop">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#" class="item_left">+91-234-567-8900</a>
+                    </div>
+                    <div class="box_left box_left_desktop">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="item_left_time">Mon-Sat 8am to 6pm</p>
+                    </div>
+                </div>
+                <div class="right_top">
+                    <div class="item_right dropdown">
+                        <a class="idiom_top dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Español</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="item_right item_right_desktop">
+                        <a href="#" class="login_top">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_main">
+            <div class="content_main">
+                <div class="left_main">
+                    <div class="social_main">
+                        <a href="#" class="social_icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social_icon"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#" class="social_icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social_icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="center_main">
+                    <div class="logo_main">
+                        <a href="#"><img src="img/logo_grey.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="right_main">
+                    <div class="button_main">
+                        <a href="#" class="btn_main">REQUEST A CUOTE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_menu">
+            <div class="content_menu">
+                <div class="left_menu">
+                    <div class="menu_mobile">
+                        <a href="#" class="nav_mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <nav class="navigator">
+                        <ul>
+                            <li><a href="#" class="item_menu item_active">Inicio</a></li>
+                            <li><a href="#" class="item_menu">Tienda</a></li>
+                            <li><a href="#" class="item_menu">Nosotros</a></li>
+                            <li><a href="#" class="item_menu">Servicios</a></li>
+                            <li><a href="#" class="item_menu">Blog</a></li>
+                            <li><a href="#" class="item_menu">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right_menu">
+                    <div class="widgets_menu">
+                        <a class="item_widget" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="item_widget"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <form action="" class="form_collap">
+                    <input type="search" placeholder="Buscar...">
+                    <a href="#" class="btn_collap">Buscar</a>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------------------------main------------------------- -->
+    <main class="site_content">
+
+        <!-- -------------------BANNER------------------------ -->
+        <article class="banner">
+            <div class="content_banner">
+                <div class="text_banner">
+                    <h2 class="title_banner">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</h2>
+                    <form class="form_search">
+                        <div class="camp_search">
+                            <input type="search" placeholder="Buscar broker">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="bot_search">
+                            <a href="#" class="btn_search btn_global">Buscar</a>
+                        </div>
+                    </form>
+                    <div class="bot_text_banner">
+                        <a href="#" class="link_list">Ver listado de broker</a>
+                    </div>
+                </div>
+                <div class="img_banner">
+                    <img src="img/3d-business.webp" alt="">
+                </div>
+            </div>
+            <div class="container_marcas">
+                <div class="carousel_marcas owl-carousel">
+                    <div class="item_marca">
+                        <img src="img/ticker-1.svg" alt="" class="img_marca">
+                        <span class="etiqueta_marca etiqueta_green">1,740,05</span>
+                    </div>
+                    <div class="item_marca">
+                        <img src="img/ticker-2.svg" alt="" class="img_marca">
+                        <span class="etiqueta_marca etiqueta_rojo">1,740,05</span>
+                    </div>
+                    <div class="item_marca">
+                        <img src="img/ticker-3.svg" alt="" class="img_marca">
+                        <span class="etiqueta_marca etiqueta_green">1,740,05</span>
+                    </div>
+                    <div class="item_marca">
+                        <img src="img/ticker-4.svg" alt="" class="img_marca">
+                        <span class="etiqueta_marca etiqueta_rojo">1,740,05</span>
+                    </div>
+                    <div class="item_marca">
+                        <img src="img/ticker-5.svg" alt="" class="img_marca">
+                        <span class="etiqueta_marca etiqueta_green">1,740,05</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ---------------------CONTAINER ROWS------------------------ -->
+        <article class="rows">
+            <div class="content_rows">
+                <div class="head_rows head_global">
+                    <h2 class="title_global">Sed ut perspiciatis unde omnis iste natus error sit</h2>
+                </div>
+                <div class="carousel_rows owl-carousel">
+                    <div class="box_info">
+                        <div class="top_box">
+                            <h3 class="title_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                        </div>
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="">
+                            <div class="calification">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="main_box">
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                            <a href="#" class="btn_global btn_box">Ver comentarios</a>
+                        </div>
+                        <div class="bot_box">
+                            <a href="#" class="link_box">O visita el broker</a>
+                        </div>
+                    </div>
+                    <div class="box_info">
+                        <div class="top_box">
+                            <h3 class="title_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                        </div>
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="">
+                            <div class="calification">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="main_box">
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                            <a href="#" class="btn_global btn_box">Ver comentarios</a>
+                        </div>
+                        <div class="bot_box">
+                            <a href="#" class="link_box">O visita el broker</a>
+                        </div>
+                    </div>
+                    <div class="box_info">
+                        <div class="top_box">
+                            <h3 class="title_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                        </div>
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="">
+                            <div class="calification">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="main_box">
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                            <a href="#" class="btn_global btn_box">Ver comentarios</a>
+                        </div>
+                        <div class="bot_box">
+                            <a href="#" class="link_box">O visita el broker</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot_rows">
+                    <a href="#" class="btn_rows btn_global">Ver todos los broker</a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- --------------------------WRAPPER_CAROUSEL----------------------- -->
+        <article class="wrapper">
+            <div class="content_wrapper">
+                <div class="head_wrapper head_global">
+                    <div class="title_global">Sed ut perspiciatis unde omnis iste natus error sit</div>
+                </div>
+                <div class="container_carousel">
+                    <div class="carousel_brok owl-carousel">
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_carousel">
+                            <a href="#">
+                               <img src="img/broker-logo.png" alt=""> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- -------------------CARDS_INFO----------------------- -->
+        <article class="cards_info">
+            <div class="content_ci">
+                <div class="container_ci">
+                    <div class="grid_cards">
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                        <div class="card_ci">
+                            <h3 class="title_ci">País o categoría</h3>
+                        </div>
+                    </div>
+                    <div class="info_ci">
+                        <h2 class="title_info_ci">Sed ut perspiciatis unde omnis iste natus error sit</h2>
+                        <p class="paragraph_ci">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicado. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                        </p>
+                        <a href="#" class="btn_ci btn_global">Lorem ipsum.</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- ---------------------CONTAINER ROWS------------------------ -->
+        <article class="rows">
+            <div class="content_rows">
+                <div class="head_rows head_global">
+                    <h2 class="title_global">Sed ut perspiciatis unde omnis iste natus error sit</h2>
+                </div>
+                <div class="carousel_rows owl-carousel carousel_rows_md">
+                    <div class="box_info box_info_menor">
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="" class="img_box_mash">
+                        </div>
+                        <div class="main_box main_box_left">
+                            <h3 class="title_main_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                        </div>
+                        <div class="bot_box bot_box_left">
+                            <a href="#" class="link_box">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box_info box_info_menor">
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="" class="img_box_mash">
+                        </div>
+                        <div class="main_box main_box_left">
+                            <h3 class="title_main_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                        </div>
+                        <div class="bot_box bot_box_left">
+                            <a href="#" class="link_box">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box_info box_info_menor">
+                        <div class="img_box">
+                            <img src="img/image_slider_2.jpg" alt="" class="img_box_mash">
+                        </div>
+                        <div class="main_box main_box_left">
+                            <h3 class="title_main_box">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                            <p class="text_box">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                        </div>
+                        <div class="bot_box bot_box_left">
+                            <a href="#" class="link_box">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+
+
+        <!-- --------------------------SECTION_IF_CD--------------------- -->
+        <article class="section_if_cd">
+            <div class="content_if_cd">
+                <div class="if_cd_">
+                    <h3 class="title_if">Sed ut perspiciatis unde omnis iste natus error sit</h3>
+                </div>
+                <div class="sec_cd_">
+                    <div class="img_cd_">
+                        <img src="img/logo-social.png" alt="">
+                    </div>
+                    <div class="text_cd_">
+                        <p class="paragraph_cd_">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicado.
+                        </p>
+                        <a href="#" class="link_cd_">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="sec_cd_">
+                    <div class="img_cd_">
+                        <img src="img/logo-social.png" alt="">
+                    </div>
+                    <div class="text_cd_">
+                        <p class="paragraph_cd_">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicado.
+                        </p>
+                        <a href="#" class="link_cd_">Lorem ipsum</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- ------------------------SECTION QUEST-------------------- -->
+        <article class="section_quest">
+            <div class="content_quest">
+                <div class="head_global head_quest">
+                    <div class="title_global">Sed ut perspiciatis unde omnis iste natus error sit</div>
+                </div>
+                <div class="container_quest">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                ¿Necesito tener un equipo de desarrollo para usar la plataforma?
+                            </button>
+                        </h2>  
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                No, en absoluto. Nuestra plataforma está totalmente diseñada para su fácil uso y administración. No tendrás necesidad de tocar una línea de código para ponerla en marcha. Además cuentas con un soporte calificado en caso de que requieras ayuda.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                ¿Hay costos mensuales ocultos?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                No. Solo pagas una vez por la licencia y el setup del juego en tu dominio o subdominio. Ya terminado el mundial, la URL permanecerá activa por 3 meses más como histórico.
+                                <br>
+                                <br>
+                                También ten en cuenta que vendemos todo tipo de competencias. Por lo cual podrás mantener tu plataforma agregando nuevos campeonatos.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                ¿Si no tengo dominio puedo usar la plataforma?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                Si. Si no cuentas o no quieres usar tu propio dominio, podemos ofrecerte un espacio en nuestro dominio fansgol.net. Quedaría por ejemplo así: tumarca.fansgol.net
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                ¿Puedo tener mi juego en una App?
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                Si. Nuestro equipo podría entregarte un APK para que tus usuarios o colabores descarguen la aplicación del juego, o bien la puedas publicar en las tiendas de Google Play y App Store. (Este servicio tiene un costo adicional)
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                ¿Puedo moderar usuarios?
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body">
+                                Si. Como propietario del juego podrás acceder a la administración de la misma y editar secciones como premios y también moderar los usuarios que están participando en el juego. (En ningún momento podrás alterar los puntajes, solo podrás prohibir que uno o varios usuarios específicos dejen de participar.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <!-- ---------------------FOOTER---------------------- -->
+    <footer class="footer">
+        <div class="content_footer">
+            <div class="top_footer">
+                <div class="logo_footer">
+                    <img src="img/logo_grey.png" alt="">
+                </div>
+                <div class="social_footer">
+                    <a href="#" class="red_footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="red_footer"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="#" class="red_footer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="red_footer"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="main_footer">
+                <div class="col_footer">
+                    <h2 class="title_col">MARKETS</h2>
+                    <a href="#" class="link_footer">Share CFDs</a>
+                    <a href="#" class="link_footer">Forex</a>
+                    <a href="#" class="link_footer">Indices</a>
+                    <a href="#" class="link_footer">Commodities</a>
+                </div>
+                <div class="col_footer">
+                    <h2 class="title_col">TRADING PLATFORMS</h2>
+                    <a href="#" class="link_footer">Web platform</a>
+                    <a href="#" class="link_footer">Trading apps</a>
+                    <a href="#" class="link_footer">MetaTrader 5</a>
+                    <a href="#" class="link_footer">Compare features</a>
+                </div>
+                <div class="col_footer">
+                    <h2 class="title_col">ACCOUNT TYPES</h2>
+                    <a href="#" class="link_footer">Demo account</a>
+                    <a href="#" class="link_footer">Standart account</a>
+                    <a href="#" class="link_footer">ECN account</a>
+                    <a href="#" class="link_footer">Islamic acount</a>
+                </div>
+                <div class="col_footer">
+                    <p class="paragraph_col">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                </div>
+            </div>
+            <div class="copy">
+                <p class="copyright">Copyright ©2022 BrokerChooise. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- ---------SCRIPT OWL-CAROUSEL------------------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script src="js/codigo.js?v=1.2"></script>
+</body>
+</html>
